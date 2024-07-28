@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('yellowSchool.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    width: 450px;
+    border-radius: 10px;
+    background-color: #134c8e;
+}
+
+.screen {
+    display: flex;
+    background-color: #b5bcc1;
+    justify-content: flex-end;
+    font-size: 48px;
+    color: black;
+    border-radius: 7px;
+    border: 3px solid black;
+    margin: 20px 20px 0 20px;
+    height: 60px;
+    width: 90%;
+}
+
+#txt  {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+    font-family: 'PT Mono', monospace;
+    padding-right: 5px;
+    width: 98%;
+    height: 95%;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 95%;
+}
+
+.label #logo {
+    font-size: 24px;
+}
+
+.numops {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    width: 90%;
+    flex-grow: 1;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 10px;
+    width: 75%;
+    border: 1px solid black;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid black;
+    width: 25%;
+}
+
+.operators button {
+    width: 90%;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 30%;
+    height: 15%;
+    border-radius: 4px;
+}
